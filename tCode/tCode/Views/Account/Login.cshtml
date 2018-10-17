@@ -1,0 +1,231 @@
+﻿@model tCode.Models.LoginModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "Log in";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js.js"></script>
+    <link href="~/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/styles/mystyle.css" rel="stylesheet" />
+	<link href="~/styles/flipstyle.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 div-left">
+                <img src="~/Content/images/logo.jpg" class="div-left-logo" />
+                <h3 class="txt-center">Hey You</h3>
+
+                <p class="txt-center">
+                    You feel lost?
+                </p>
+                <p class="div-left-p">
+                    fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+					fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+                </p>
+                <p>
+                    fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+					fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+                </p>
+                <p>
+                    fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+					fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj fjklerj 
+                </p>
+            </div>
+            <div class="col-md-8 top-login">
+                <div class="col-md-6 flip-container">
+				<h3 class="col-md-offset-1"><b class="blk-clr-two">Sign up</b>/&nbsp;Login</h3>
+				<div class="flipper">
+                        <div class="margin-top-login col-md-offset-1">
+                            <h5><b class="blk-clr-two ">We will need...</b></h5>
+                        </div>
+                    <form class="form-horizontal front" action="/action_page.php">
+                        
+                        <div class="form-group has-error has-feedback margin-top-login">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Username">
+
+                                <span class="fa fa-smile-o fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-error has-feedback">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="password" class="form-control input-buttom-line" id="" placeholder="Password">
+
+                                <span class="fa fa fa-key fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember">
+                                        Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <div class="col-sm-6"><a href="#" onclick="flip()">Forgot password?</a></div>
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-default">LOG IN</button></div>
+                            </div>
+                        </div>
+                    </form>
+                    
+					<form class="form-horizontal margin-top-login back hidden">
+                            <div class="form-group has-error has-feedback margin-top-login">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Username">
+
+                                <span class="fa fa-smile-o fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+							</div>
+                            
+							<div class="form-group">
+								<div class="col-sm-offset-1 col-sm-10">
+									<div class="col-sm-6"><a href="#" onclick="flipBack()">Back</a></div>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-default">Send</button>
+									</div>
+								</div>
+							</div>
+                        </form>
+				</div>	
+					<div class="verticle-line-up"></div>
+                    <div class="verticle-txt">OR</div>
+                    <div class="verticle-line-down"></div>
+                </div>
+
+                <div class="col-md-6">
+<form class="form-horizontal " action="/action_page.php">
+                       
+                        <div class="col-md-offset-1 margin-top-register">
+                            <h5><b class="blk-clr-two ">Create a new account</b></h5>
+                        </div>
+
+                        <div class="form-group has-error has-feedback margin-top-login">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Name">
+
+                                <span class="fa fa-user fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+
+     <div class="form-group has-error has-feedback">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Email Address">
+
+                                <span class="fa fa-envelope fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+       <div class="form-group has-error has-feedback">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Mobile or phone no">
+
+                                <span class="fa fa-mobile fa-2x   form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+       <div class="form-group has-error has-feedback">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="text" class="form-control input-buttom-line" id="" placeholder="Username">
+
+                                <span class="fa fa-smile-o fa-2x  form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-error has-feedback">
+
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <input type="password" class="form-control input-buttom-line" id="" placeholder="Password">
+
+                                <span class="fa fa fa-key fa-2x form-control-feedback blk-clr-one"></span>
+                            </div>
+                        </div>
+                      
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-default">SUBMIT</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+	    function flip() {
+	        $('.back').removeClass('hidden');
+	        $('.front').addClass('hidden');
+	        $('.flipper').toggleClass('flipped');
+	    }
+	    function flipBack() {
+	        $('.back').addClass('hidden');
+	        $('.front').removeClass('hidden');
+	        $('.flipper').toggleClass('flipped');
+	    }
+	</script>
+	
+</body>
+</html>
+
+
+@*<section id="loginForm">
+<h2>Use a local account to log in.</h2>
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Log in Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li>
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </li>
+        </ol>
+        <input type="submit" value="Log in" />
+    </fieldset>
+    <p>
+        @Html.ActionLink("Register", "Register") if you don't have an account.
+    </p>
+}
+</section>*@
+
+@*<section class="social" id="socialLoginForm">
+    <h2>Use another service to log in.</h2>
+    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+</section>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

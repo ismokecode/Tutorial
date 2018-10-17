@@ -1,0 +1,175 @@
+﻿
+body {
+	
+    color: #8299C2 !important;
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+.div-left-p{
+margin-top:45px;
+}
+
+.top-login{
+	top:60px !important;
+}
+
+.margin-top-login{
+	margin-top:60px;
+}
+
+.margin-top-account{
+	margin-top:40px;
+}
+
+.margin-top-register{
+	margin-top:105px !important;
+}
+
+/* ---------->>> IMPORTANT COLOR #E9ECF3  #435a6b(dark) #8299C2(lite) #7792BD<<<-----------*/
+
+/*************************** start button hover effect ********************/
+.btn {
+    width: 100% !important;
+    background: none !important;
+    color: #8299C2;
+    font-weight: 200;
+    position: relative;
+    transition: color 0.25s ease;
+    border: 3px solid #8299C2;
+}
+.btn:hover {
+        color: #fff;
+    }
+.btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background-color: #435a6b;
+    transition: width 0.25s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+/***********************************start button hover effect***********************************/
+/******************** please define new color here*******************/
+.blk-clr-one {
+    opacity: 0.5;
+    color: #8299C2 !important;
+}
+
+.blk-clr-two {
+    color: #435a6b !important;
+}
+/******************** please define new color here*******************/
+/********************** start remove border from textbox *************************/
+.input-buttom-line {
+    background: transparent;
+    border: none !important;
+    border-bottom: 1px solid #A5B0CC !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.input-buttom-line:focus {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #A5B0CC !important;
+    box-shadow: 0 4px 2px -2px gray !important;
+    border-radius: 0 !important;
+}
+/********************** end remove border from textbox *************************/
+/*************************************when input focus add this property to blk-clr-one class***********/
+input:focus + .blk-clr-one {
+    opacity: 1 !important;
+}
+/*************************************when input focus add this property to blk-clr-one class***********/
+
+.div-left{
+	background-image: url(../images/leftbckgrnd.jpg);
+	color: #fff;
+}
+/************************** verticle line with text *****************************/
+        .verticle-line-up {
+        width:2px ;
+        height:180px;
+        background: #8299C2;
+        content:'';
+        position:absolute;
+        top:105px;
+        right:0px;
+        }
+        .verticle-line-down {
+        width:2px ;
+        height:180px;
+        background: #8299C2;
+        content:'';
+        position:absolute;
+        top:308px;
+        right:0px;
+        }
+        .verticle-txt {
+        position:absolute;
+        top:287px;
+        right:-7px;
+        
+        }
+/************************** end verticle line with text *****************************/
+
+/**********************Form-group*************************************/
+
+.input-group{
+	min-width: 350px;
+}
+
+.btn_ghost_blue {
+    border: 1px solid #1e3953;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5px !important;
+    color: #1e3953;
+    font-size: 15px;
+    min-width: 100px;
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+}
+.btn_ghost_blue:hover,
+.btn_full_blue:hover {
+    text-decoration: none;
+}
+.btn_ghost_blue:hover,
+.btn_ghost_blue:focus {
+    background-color: #1e3953;
+    color: #fff;
+}
+.btn_full_blue:hover,
+.btn_full_blue:focus {
+    color: #fff;
+}
+
+.input-group-50
+{
+	width:50%;
+}
+/* start div-left logo*/
+.div-left-logo {
+    margin: auto;
+    display: block;
+    position:relative;
+    margin-top:40px;
+}
+/* end div-left logo*/
+.txt-center {
+text-align:center;
+}
